@@ -20,6 +20,7 @@ export const createPages: GatsbyNode["createPages"] = async ({ actions }) => {
         title: project.title,
         description: project.description,
         date: project.date,
+        member: project.member,
         background: project.background,
         skills: project.skills,
         role: project.role,
