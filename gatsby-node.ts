@@ -11,7 +11,7 @@ export const createPages: GatsbyNode["createPages"] = async ({ actions }) => {
 
   ProjectDetailItems.forEach((project) => {
     createPage({
-      path: `/My-Portfolio/projects/${project.slug}`,
+      path: `/projects/${project.slug}`,
       component: projectTemplate,
       context: {
         slug: project.slug,
