@@ -1,5 +1,5 @@
 import React from "react";
-import { PageProps } from "gatsby";
+import { HeadFC, PageProps } from "gatsby";
 import { ProjectDetail } from "./type/projectDetail";
 import { renderIcons } from "../../shared/utils/renderIcon";
 import { renderSkillIcons } from "../../shared/utils/renderSkillIcon";
@@ -94,3 +94,13 @@ const ProjectTemplate: React.FC<PageProps<null, ProjectDetail>> = ({
 };
 
 export default ProjectTemplate;
+
+export const Head: HeadFC<null, ProjectDetail> = ({ pageContext }) => {
+  const { title, description } = pageContext;
+  return (
+    <>
+      <title>{title} | 프로젝트 상세</title>
+      <meta name="description" content={description} />
+    </>
+  );
+};
