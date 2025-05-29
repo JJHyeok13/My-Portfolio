@@ -6,7 +6,7 @@ export const renderProjectImages = (title: string) => {
     case "포트폴리오 사이트":
       return (
         <StaticImage
-          src="../../assets/images/projects/portfolio/title.png"
+          src="../../assets/images/projects/portfolio/main.png"
           alt="portfolio"
           style={{ borderTopLeftRadius: 16, borderTopRightRadius: 16 }}
         />
