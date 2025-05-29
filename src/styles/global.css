@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* 모바일: 0px ~ 639px */
+  .mainText {
+    font-size: 32px;
+    letter-spacing: -2px;
+  }
+
+  .titleLg {
+    font-size: 28px;
+    letter-spacing: -2px;
+  }
+
+  .titleMd {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -1px;
+  }
+
+  .titleSm {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -1px;
+  }
+
+  .textXlgBold {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+
+  .textXlg {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -1px;
+  }
+
+  .textLgBold {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+
+  .textLgSemibold {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -1px;
+  }
+
+  .textLg {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -1px;
+  }
+
+  .textMd {
+    font-size: 14px;
+    letter-spacing: -0.5px;
+  }
+
+  .textSm {
+    font-size: 12px;
+  }
+
+  .caption {
+    font-size: 10px;
+  }
+
+  /* 태블릿: 640px ~ 1023px */
+  @media (min-width: 640px) {
+    .mainText {
+      font-size: 48px;
+      letter-spacing: -2px;
+    }
+
+    .titleLg {
+      font-size: 32px;
+      letter-spacing: -2px;
+    }
+
+    .titleMd {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    .titleSm {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    .textXlgBold {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    .textXlg {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -1px;
+    }
+
+    .textLgBold {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    .textLgSemibold {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -1px;
+    }
+
+    .textLg {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -1px;
+    }
+
+    .textMd {
+      font-size: 16px;
+      letter-spacing: -0.5px;
+    }
+
+    .textSm {
+      font-size: 14px;
+    }
+
+    .caption {
+      font-size: 12px;
+    }
+  }
+
+  /* PC: 1024px 이상 */
+  @media (min-width: 1024px) {
+    .mainText {
+      font-size: 64px;
+      letter-spacing: -2px;
+    }
+
+    .titleLg {
+      font-size: 40px;
+      letter-spacing: -2px;
+    }
+
+    .titleMd {
+      font-size: 36px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    .titleSm {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    .textXlgBold {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    .textXlg {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -1px;
+    }
+
+    .textLgBold {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    .textLgSemibold {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -1px;
+    }
+
+    .textLg {
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: -1px;
+    }
+
+    .textMd {
+      font-size: 16px;
+      letter-spacing: -0.5px;
+    }
+
+    .textSm {
+      font-size: 14px;
+    }
+
+    .caption {
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+}
