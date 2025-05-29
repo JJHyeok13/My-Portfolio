@@ -15,6 +15,7 @@ const ProjectTemplate: React.FC<PageProps<null, ProjectDetail>> = ({
     title,
     description,
     date,
+    member,
     background,
     skills,
     role,
@@ -51,6 +52,20 @@ const ProjectTemplate: React.FC<PageProps<null, ProjectDetail>> = ({
             ))}
           </div>
         </div>
+
+        {member && (
+          <div className="space-y-2">
+            <p className="textXlgBold">👬 개발 인원</p>
+
+            {/* 모바일 (sm 미만)에서는 줄바꿈해서 표시 */}
+            <p className="textMd sm:hidden whitespace-pre-line">
+              {member.replace(/ => /g, "\n=> ")}
+            </p>
+
+            {/* sm 이상에서는 원본 그대로 한 줄로 표시 */}
+            <p className="textMd hidden sm:block">{member}</p>
+          </div>
+        )}
 
         {background && (
           <div className="space-y-2">
