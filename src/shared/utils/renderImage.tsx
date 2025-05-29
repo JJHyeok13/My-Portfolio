@@ -17,6 +17,63 @@ const ImageWrapper = ({ children }: { children: React.ReactNode }) => {
 
 export const renderImages = (slug: string) => {
   switch (slug) {
+    case "포트폴리오 사이트":
+      return (
+        <ImageWrapper>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8">
+            <div className="space-y-1">
+              <p className="textSm text-[#ACADB4] text-center">
+                {"< "}메인{" >"}
+              </p>
+              <StaticImage
+                src="../../assets/images/projects/portfolio/main.png"
+                alt="메인"
+              />
+            </div>
+
+            <div className="space-y-1">
+              <p className="textSm text-[#ACADB4] text-center">
+                {"< "}AboutMe{" >"}
+              </p>
+              <StaticImage
+                src="../../assets/images/projects/portfolio/aboutMe.png"
+                alt="AboutMe"
+              />
+            </div>
+
+            <div className="space-y-1">
+              <p className="textSm text-[#ACADB4] text-center">
+                {"< "}Qualification{" >"}
+              </p>
+              <StaticImage
+                src="../../assets/images/projects/portfolio/qualification.png"
+                alt="Qualification"
+              />
+            </div>
+
+            <div className="space-y-1">
+              <p className="textSm text-[#ACADB4] text-center">
+                {"< "}Skill{" >"}
+              </p>
+              <StaticImage
+                src="../../assets/images/projects/portfolio/skill.png"
+                alt="Skill"
+              />
+            </div>
+
+            <div className="space-y-1">
+              <p className="textSm text-[#ACADB4] text-center">
+                {"< "}Project{" >"}
+              </p>
+              <StaticImage
+                src="../../assets/images/projects/portfolio/project.png"
+                alt="Project"
+              />
+            </div>
+          </div>
+        </ImageWrapper>
+      );
+
     case "dice":
       return (
         <ImageWrapper>
