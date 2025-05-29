@@ -11,7 +11,7 @@ const ProjectItemComponent: React.FC<ProjectItemComponentProps> = ({
   item,
 }) => {
   return (
-    <Link to={withPrefix(`/projects/${item.title}`)}>
+    <Link to={`/projects/${item.title}`}>
       <div className="shadow-custom rounded-2xl bg-white pb-5 flex flex-col gap-y-4 hover:scale-105 transition-transform ease-in-out duration-500">
         {renderProjectImages(item.title)}
 
