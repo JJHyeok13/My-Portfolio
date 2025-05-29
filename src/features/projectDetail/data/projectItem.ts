@@ -17,7 +17,7 @@ export const ProjectDetailItems: ProjectDetail[] = [
       },
     ],
     references: [
-      { title: "Github", link: "https://github.com/UMC-README/back-end" },
+      { title: "Github", link: "https://github.com/JJHyeok13/My-Portfolio" },
     ],
   },
   {
@@ -82,7 +82,7 @@ export const ProjectDetailItems: ProjectDetail[] = [
     description: "룸메이트와 함께 만드는 우리의 편안한 공간",
     date: "2024.06 ~ 진행 중",
     member:
-      "PM & Design 1, iOS 1, Android 3, BackEnd 5 => PM & Design 1, iOS 2, Android 3, Back 4",
+      "PM & Design 1, iOS 1, Android 3, BackEnd 5 => PM & Design 1, iOS 2, Android 3, BackEnd 4",
     background: `University MakeUs Challenge 6th에서 진행한 데모데이 프로젝트로,\n대학교 기숙사의 룸메이트를 구하는 과정에서 룸메이트를 구하는 플랫폼이 따로 있지 않아 에브리타임과 같은 앱을 사용하고 있으나\n원하는 룸메이트를 구하는 것에 제약사항이 많고 룸메이트를 구했지만 라이프스타일이 맞지않아서\n정신적 스트레스가 쌓이는 대학생들의 고민을 해소하고자 해당 서비스 개발`,
     skills: [
       "TypeScript",
