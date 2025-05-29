@@ -1,4 +1,5 @@
 import React from "react";
+import { withPrefix } from "gatsby";
 
 export const renderSkillIcons = (
   skill: string,
@@ -6,8 +7,20 @@ export const renderSkillIcons = (
   height: number
 ) => {
   if (skill === "shadcn/ui") {
-    return <img src={`/skill/shadcn.png`} width={width} height={height} />;
+    return (
+      <img
+        src={withPrefix(`/skill/shadcn.png`)}
+        width={width}
+        height={height}
+      />
+    );
   }
 
-  return <img src={`/skill/${skill}.png`} width={width} height={height} />;
+  return (
+    <img
+      src={withPrefix(`/skill/${skill}.png`)}
+      width={width}
+      height={height}
+    />
+  );
 };

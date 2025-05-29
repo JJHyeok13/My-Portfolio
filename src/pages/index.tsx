@@ -36,7 +36,10 @@ export const Head: HeadFC = () => (
     <meta name="robots" content="index,follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta property="og:image" content="http://localhost:8000/snow.png" />
+    <meta
+      property="og:image"
+      content="https://jjhyeok13.github.io/My-Portfolio/snow.png"
+    />
     <link rel="icon" href="/favicon.ico" />
 
     {/* Open Graph */}
