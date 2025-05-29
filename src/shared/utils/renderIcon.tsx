@@ -10,7 +10,7 @@ export const renderIcons = (icon: string) => {
     case "Github":
       return (
         <img
-          src={withPrefix("/skill/github.png")}
+          src={withPrefix("/skill/Github.png")}
           alt="Github"
           width={40}
           height={40}
@@ -19,7 +19,7 @@ export const renderIcons = (icon: string) => {
     case "App Store":
       return (
         <img
-          src={withPrefix("/etc/App Store.png")}
+          src={withPrefix("/etc/AppStore.png")}
           alt="App Store"
           width={40}
           height={40}
@@ -28,7 +28,7 @@ export const renderIcons = (icon: string) => {
     case "Play Store":
       return (
         <img
-          src={withPrefix("/etc/Play Store.png")}
+          src={withPrefix("/etc/PlayStore.png")}
           alt="Play Store"
           width={40}
           height={40}

@@ -16,6 +16,16 @@ export const renderSkillIcons = (
     );
   }
 
+  if (skill === "TanStack Query") {
+    return (
+      <img
+        src={withPrefix(`/skill/TanstackQuery.png`)}
+        width={width}
+        height={height}
+      />
+    );
+  }
+
   return (
     <img
       src={withPrefix(`/skill/${skill}.png`)}
