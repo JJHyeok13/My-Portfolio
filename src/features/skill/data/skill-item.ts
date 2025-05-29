@@ -31,7 +31,7 @@ export const SkillItems: Skill[] = [
         icon: "./skill/styled-components.png",
       },
       {
-        name: "TanStack Query",
+        name: "Tanstack Query",
         percentage: 70,
         icon: "./skill/Tanstack Query.png",
       },
