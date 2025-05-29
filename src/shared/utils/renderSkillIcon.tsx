@@ -16,7 +16,7 @@ export const renderSkillIcons = (
     );
   }
 
-  if (skill === "TanStack Query") {
+  if (skill === "Tanstack Query") {
     return (
       <img
         src={withPrefix(`/skill/TanstackQuery.png`)}

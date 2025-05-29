@@ -23,7 +23,7 @@ export const ProjectDetailItems: ProjectDetail[] = [
   {
     slug: "dice",
     mainColor: "#000000",
-    icon: "/project/dice.png",
+    icon: "/My-Portfolio/project/dice.png",
     title: "dice - 팝업 운영 올인원 솔루션",
     description:
       "소상공인 · 자영업자를 위한 팝업공간 대여 및 운영 지원 올인원 플랫폼",
@@ -77,7 +77,7 @@ export const ProjectDetailItems: ProjectDetail[] = [
   {
     slug: "cozymate",
     mainColor: "#68A4FF",
-    icon: "/project/cozymate.png",
+    icon: "/My-Portfolio/project/cozymate.png",
     title: "cozymate - 룸메이트 매칭 및 생활 종합 관리 폐쇄형 커뮤니티 서비스",
     description: "룸메이트와 함께 만드는 우리의 편안한 공간",
     date: "2024.06 ~ 진행 중",
@@ -137,7 +137,7 @@ export const ProjectDetailItems: ProjectDetail[] = [
   {
     slug: "READ.ME",
     mainColor: "#509BF7",
-    icon: "/project/readme.png",
+    icon: "/My-Portfolio/project/readme.png",
     title: "READ.ME",
     description:
       "공지 안 읽는 부원들을 관리해 주는, 지친 운영진을 위한 공지 확인 체크 서비스",
@@ -165,7 +165,7 @@ export const ProjectDetailItems: ProjectDetail[] = [
   {
     slug: "gradu-inha",
     mainColor: "#005BAC",
-    icon: "/project/gradu-inha.png",
+    icon: "/My-Portfolio/project/gradu-inha.png",
     title: "gradu-inha",
     description: "인하대학교 졸업 요건 확인 서비스",
     date: "2024.03 ~ 2025.03",
@@ -214,7 +214,7 @@ export const ProjectDetailItems: ProjectDetail[] = [
   {
     slug: "Tube Slice",
     mainColor: "#0075FF",
-    icon: "/project/tube-slice.png",
+    icon: "/My-Portfolio/project/tube-slice.png",
     title: "Tube Slice",
     description: "Youtube 동영상 스크립트 생성 서비스",
     date: "2024.03 ~ 2024. 08",
