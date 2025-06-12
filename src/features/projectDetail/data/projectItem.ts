@@ -9,11 +9,20 @@ export const ProjectDetailItems: ProjectDetail[] = [
     date: "2025.05",
     skills: ["TypeScript", "React.js", "Gatsby.js", "tailwindcss"],
     role: [
-      { title: "Gatsby를 통한 정적 사이트 생성", content: "" },
-      { title: "Github Action을 통한 CI/CD 적용", content: "" },
+      {
+        title: "Gatsby를 통한 정적 사이트 생성",
+        content:
+          "React 기반의 정적 사이트 제너레이터인 Gastby를 사용하여 [퍼포먼스와 SEO에 최적화된 포트폴리오 사이트]를 구성하였습니다.",
+      },
+      {
+        title: "Github Action을 통한 CI/CD 적용",
+        content:
+          "Github Actions 워크플로(.github/workflows/deploy.yaml)를 활용하여 CI/CD 파이프라인을 구축하여 main 브랜치로 push할 때 [자동으로 빌드 및 배포 과정을 실행]하도록 하였습니다.",
+      },
       {
         title: "react-type-animation와 framer-motion를 통한 애니메이션 적용",
-        content: "",
+        content:
+          "react-type-animation 라이브러리를 활용하여 초기 화면에 [타이핑 애니메이션을 구현]하였습니다. 또한, framer-motion을 활용하여 각 컴포넌트가 등장할 때 [페이드 인/아웃되는 애니메이션]을 추가하였습니다.",
       },
     ],
     references: [
@@ -29,7 +38,7 @@ export const ProjectDetailItems: ProjectDetail[] = [
       "소상공인 · 자영업자를 위한 팝업공간 대여 및 운영 지원 올인원 플랫폼",
     date: "2024.12 ~ 진행 중",
     member:
-      "PM 1, Design 1, FrontEnd 2, BackEnd 1 => PM 1, Design 2, App 1, Web 1, BackEnd 1",
+      "PM 1, Design 1, [FrontEnd 2], BackEnd 1 => PM 1, Design 2, [App 1], Web 1, BackEnd 1",
     background:
       "Central MakeUs Challenge 16th Web 파트로서 진행한 데모데이 프로젝트로,\n최근 팝업스토어의 인기가 급증하면서 높은 임대료와 운영 비용으로 인해 소상공인과 자영업자들이 진입 장벽을 느끼고 있고,\n다양한 지원 프로그램이 있지만 쉽게 찾고 활용하기 어려움을 겪고 있는 상황입니다.\n이를 해소하기 위해 효율적으로 저렴한 공간을 찾을 수 있도록 지원하고, 쉽게 정부 지원 프로그램을 찾을 수 있도록 정보를 모아서 보여주는 서비스 개발",
     skills: [
@@ -82,7 +91,7 @@ export const ProjectDetailItems: ProjectDetail[] = [
     description: "룸메이트와 함께 만드는 우리의 편안한 공간",
     date: "2024.06 ~ 진행 중",
     member:
-      "PM & Design 1, iOS 1, Android 3, BackEnd 5 => PM & Design 1, iOS 2, Android 3, BackEnd 4",
+      "PM & Design 1, [iOS 1], Android 3, BackEnd 5 => PM & Design 1, [iOS 2], Android 3, BackEnd 4",
     background: `University MakeUs Challenge 6th에서 진행한 데모데이 프로젝트로,\n대학교 기숙사의 룸메이트를 구하는 과정에서 룸메이트를 구하는 플랫폼이 따로 있지 않아 에브리타임과 같은 앱을 사용하고 있으나\n원하는 룸메이트를 구하는 것에 제약사항이 많고 룸메이트를 구했지만 라이프스타일이 맞지않아서\n정신적 스트레스가 쌓이는 대학생들의 고민을 해소하고자 해당 서비스 개발`,
     skills: [
       "TypeScript",
@@ -142,7 +151,7 @@ export const ProjectDetailItems: ProjectDetail[] = [
     description:
       "공지 안 읽는 부원들을 관리해 주는, 지친 운영진을 위한 공지 확인 체크 서비스",
     date: "2024.06 ~ 2024.08",
-    member: "PM 1, Design 1, Web 4, BackEnd 4",
+    member: "PM 1, Design 1, Web 4, [BackEnd 4]",
     background:
       "University MakeUs Challenge 6th에서 Node.js 파트로서 진행한 프로젝트로, 가톨릭대학교, 인하대학교, 한국공학대학교, 숭실대학교 운영진이 공지를 읽지 않는 부원들에 대한 관리를 더 간편하게 할 방법이 없을지 고민하면서 기획한 서비스로, 부원들이 공지를 읽지 않으면서 생기는 스트레스 및 불화 발생을 줄이고, 부원들이 공지를 읽지 않음에 따라 생기는 이슈 발생을 줄이며 해당 이슈에 대한 시간과 인력 소모를 줄이도록 도와주는 서비스를 기획하고 개발하였다.",
     skills: ["JavaScript", "express"],
@@ -169,7 +178,7 @@ export const ProjectDetailItems: ProjectDetail[] = [
     title: "gradu-inha",
     description: "인하대학교 졸업 요건 확인 서비스",
     date: "2024.03 ~ 2025.03",
-    member: "Design 1, Web 1, BackEnd 7",
+    member: "Design 1, [Web 1], BackEnd 7",
     background:
       "인하대학교 내에서 각 대학 및 학과 그리고 학번에 따른 졸업요건이 모두 달라 재학생들이 본인의 졸업 요건을 정확하게 판별하기 어려운 점을 해소하기 위해 해당 서비스 개발",
     skills: [
@@ -218,7 +227,7 @@ export const ProjectDetailItems: ProjectDetail[] = [
     title: "Tube Slice",
     description: "Youtube 동영상 스크립트 생성 서비스",
     date: "2024.03 ~ 2024. 08",
-    member: "PM & Design & Web 1, BackEnd 2",
+    member: "[PM & Design & Web 1], BackEnd 2",
     background:
       "Youtube와 같은 영상 미디어를 기반으로 정보를 얻은 사람들의 수가 기하급수적으로 늘어남에 따라 정보를 더 효율적으로 얻기 위해 해당 서비스 개발\n또한 짧은 시간을 갖는 Youtube Shorts, Instagram Reels 등의 콘텐츠에 적용하여 10분 길이의 영상도 집중하지 못하는 사람들을 위해 개발 수행",
     skills: [
