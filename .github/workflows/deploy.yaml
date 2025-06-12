@@ -17,9 +17,18 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "18"
+          cache: "npm" # ✅ npm 캐시 사용
 
-      - name: Install Dependencies
-        run: npm install
+      - name: Set npm registry
+        run: npm config set registry https://registry.npmjs.org/
+
+      - name: Install Dependencies with Retry
+        run: |
+          for i in 1 2 3; do
+            npm install && break
+            echo "❗ npm install 실패... 다시 시도 중 ($i)"
+            sleep 5
+          done
 
       - name: Build Gatsby Site
         run: npm run build
