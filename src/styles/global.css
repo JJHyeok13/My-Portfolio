@@ -56,6 +56,12 @@
     letter-spacing: -1px;
   }
 
+  .textMdSemibold {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+  }
+
   .textMd {
     font-size: 14px;
     letter-spacing: -0.5px;
@@ -121,6 +127,12 @@
       font-size: 18px;
       font-weight: 600;
       letter-spacing: -1px;
+    }
+
+    .textMdSemibold {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: -0.5px;
     }
 
     .textMd {
@@ -189,6 +201,12 @@
       font-size: 18px;
       font-weight: 400;
       letter-spacing: -1px;
+    }
+
+    .textMdSemibold {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: -0.5px;
     }
 
     .textMd {
