@@ -22,6 +22,36 @@ const ProjectTemplate: React.FC<PageProps<null, ProjectDetail>> = ({
     references,
   } = pageContext;
 
+  const formatContent = (content: string): React.ReactNode[] => {
+    const result: React.ReactNode[] = [];
+    let lastIndex = 0;
+    const regex = /\[(.*?)\]/g; // 대괄호 안의 텍스트를 찾는 정규표현식
+    let match;
+    let key = 0;
+
+    // 정규표현식을 통해 대괄호 안의 텍스트를 순차적으로 탐색
+    while ((match = regex.exec(content)) !== null) {
+      const startIndex = match.index;
+      // 대괄호 이전의 일반 텍스트를 결과 배열에 추가
+      if (startIndex > lastIndex) {
+        result.push(content.substring(lastIndex, startIndex));
+      }
+      // 대괄호 안의 텍스트를 <span> 태그로 감싸서 하이라이트 처리 (예: .highlight 클래스로 스타일 적용)
+      result.push(
+        <span key={key++} className="textMdSemibold text-[#50C878]">
+          {match[1]}
+        </span>
+      );
+      // 다음 검색 시작 인덱스 업데이트
+      lastIndex = regex.lastIndex;
+    }
+    // 남은 일반 텍스트가 있으면 배열에 추가
+    if (lastIndex < content.length) {
+      result.push(content.substring(lastIndex));
+    }
+    return result;
+  };
+
   return (
     <div
       style={{ backgroundColor: mainColor }}
@@ -36,7 +66,9 @@ const ProjectTemplate: React.FC<PageProps<null, ProjectDetail>> = ({
       <div className="space-y-8 bg-white p-6 rounded-[32px]">
         <div className="flex flex-col gap-y-4 lg:flex-row lg:justify-between">
           <div className="flex flex-col lg:flex-row gap-x-5 gap-y-2">
-            {icon && <img src={icon} width={120} height={120} />}
+            {icon && (
+              <img src={icon} alt="프로젝트 아이콘" width={120} height={120} />
+            )}
             <div className="flex flex-col justify-center gap-y-1">
               <p className="titleSm">{title}</p>
               <p className="textXlg">{description}</p>
@@ -59,11 +91,11 @@ const ProjectTemplate: React.FC<PageProps<null, ProjectDetail>> = ({
 
             {/* 모바일 (sm 미만)에서는 줄바꿈해서 표시 */}
             <p className="textMd sm:hidden whitespace-pre-line">
-              {member.replace(/ => /g, "\n=> ")}
+              {formatContent(member.replace(/ => /g, "\n=> "))}
             </p>
 
             {/* sm 이상에서는 원본 그대로 한 줄로 표시 */}
-            <p className="textMd hidden sm:block">{member}</p>
+            <p className="textMd hidden sm:block">{formatContent(member)}</p>
           </div>
         )}
 
@@ -95,8 +127,8 @@ const ProjectTemplate: React.FC<PageProps<null, ProjectDetail>> = ({
             {role.map((item) => (
               <div className="space-y-1">
                 <p className="textLgSemibold">• {item.title}</p>
-                <p className="textMd ml-1">{item.content}</p>
-                {item.image && <img src={item.image} />}
+                <p className="textMd ml-1">{formatContent(item.content)}</p>
+                {item.image && <img src={item.image} alt="사진" />}
               </div>
             ))}
           </div>
